@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ecobite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#08352e;
+      --bg2:#0f6b5a;
+      --card:#f7fbf9;
+      --muted:#9aa8a4;
+      --accent:#57e1b4;
+      --accent-dark:#28c08f;
+      --radius:16px;
+      --container-w:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;min-height:100vh;font-family:Inter,system-ui,Arial;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:#072423;padding:40px;
+    }
+
+    .wrap{width:100%;max-width:var(--container-w);background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.04));padding:32px;border-radius:12px;display:flex;gap:36px;align-items:flex-start}
+
+   
+    .form-card{background:var(--card);border-radius:14px;padding:28px;flex:1;box-shadow:0 6px 18px rgba(2,10,8,0.25)}
+    .form-card h1{margin:0 0 12px;font-size:28px;color:#173f36}
+    label.section-title{display:block;margin-top:18px;margin-bottom:8px;color:var(--muted);font-size:14px}
+
+    .options{display:flex;flex-direction:column;gap:10px}
+    .opt{display:flex;align-items:center;gap:12px;background:#eef6f3;padding:12px;border-radius:8px}
+    .opt input{width:18px;height:18px}
+    .opt span{font-size:15px;color:#2a4d45}
+
+    textarea{width:100%;min-height:56px;border-radius:8px;padding:12px;border:1px solid #d6e8e2;font-size:14px;resize:vertical}
+
+    .values{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+
+    .btn-pay{display:block;width:100%;padding:14px;border-radius:24px;border:none;background:linear-gradient(90deg,var(--accent),var(--accent-dark));color:#033825;font-weight:600;font-size:16px;margin-top:18px;cursor:pointer}
+
+    .disclaimer{font-size:12px;text-align:center;color:var(--muted);margin-top:8px}
+
+   
+    .side{width:380px;display:flex;flex-direction:column;align-items:center;gap:18px}
+    .logo-wrap{width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,0.95);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,0.25)}
+    .logo{font-family:Playfair Display, serif;font-size:40px;color:#0c3c34}
+    .tag{background:rgba(255,255,255,0.9);padding:16px;border-radius:16px;font-family:Playfair Display, serif;font-size:20px;color:#0c3c34;text-align:center;max-width:320px}
+
+    
+    @media (max-width:980px){.wrap{flex-direction:column;align-items:stretch}.side{width:100%;order:2;flex-direction:row;justify-content:center}.form-card{order:1}}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <form class="form-card" id="paymentForm">
+      <h1>Hora de pagar!</h1>
+
+      <label class="section-title">Tipo de pagamento *</label>
+      <div class="options" role="group" aria-label="Tipos de pagamento">
+        <label class="opt"><input type="radio" name="payment" value="pix" checked><span>Pix</span></label>
+        <label class="opt"><input type="radio" name="payment" value="card"><span>Cartão de crédito</span></label>
+        <label class="opt"><input type="radio" name="payment" value="voucher"><span>Vale alimentação</span></label>
+      </div>
+
+      <label class="section-title">Endereço</label>
+      <textarea name="address" placeholder="Digite seu endereço (opcional)"></textarea>
+
+      <label class="section-title">Valor</label>
+      <div class="values" role="group" aria-label="Valores">
+        <label class="opt"><input type="radio" name="amount" value="15"><span>R$15,00</span></label>
+        <label class="opt"><input type="radio" name="amount" value="20"><span>R$20,00</span></label>
+        <label class="opt"><input type="radio" name="amount" value="30"><span>R$30,00</span></label>
+        <label class="opt"><input type="radio" name="amount" value="40"><span>R$40,00</span></label>
+      </div>
+
+      <button type="submit" class="btn-pay">Pagar</button>
+      <div class="disclaimer">Seu nome não será compartilhado. Nunca enviaremos spam.</div>
+    </form>
+
+    <aside class="side" aria-hidden="false">
+      <div class="logo-wrap">
+        <div style="text-align:center">
+         
+          <img src="c:\Users\User\Pictures\Saved Pictures\logo.jpg.jfif" alt="Logo Ecobite" width="120" height="120">
+            <path d="M18 42c6-8 20-7 26-20-8 3-15 6-26 4" stroke="#0c3c34" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M34 30c2-3 4-6 7-8" stroke="#0c3c34"></path>
+            
+            </body>
+            </html>

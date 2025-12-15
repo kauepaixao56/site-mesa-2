@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>hortifruti</title>
+
+<style>
+    body {
+        background-color: #1f3a33;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+        background-color: #22463c;
+        border-radius: 12px;
+        border: 2px solid #355a50;
+    }
+
+    .title-box {
+        background: #ffffff;
+        padding: 10px 0;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .logos img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        border-radius: 50%;
+        background: #fff;
+        padding: 6px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title-box">HORTIFRUTI</div>
+
+    <div class="logos">
+        <img src="data:image/png;base64,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" alt="hortifruti e cia">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUC4MZR4nx2rFb9iJ-MofN5YFSoya8DlpSg&s" alt="hortifruti Santo Antonio">
+        <img src="https://img.cdndsgni.com/preview/12459918.jpg" alt="hortifruti mutifruti">
+        <img src="https://storage.googleapis.com/prod-cardapio-web/uploads/company/logo/13128/7470abb4FEIRC383ODASFRUTASLOGOPNG3_1729608067699416.png" alt="hortifruti feirão das frutas">
+        <img src="https://brandstarts.com.br/wp-content/uploads/2024/12/logo-marca-pedrao-hortifruti1.jpg" alt="pedrão hortifruti">
+
+        <img src="https://images.seeklogo.com/logo-png/52/1/hortifruti-cachoeiro-logo-png_seeklogo-526925.png" alt="hortifruti cachoeiro">
+        <img src="https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2F2013%2F01%2F08%2F19%2FLogo-LV-58354_38920_032956017_302503317.jpg" alt="hortifruti verdurão">
+        <img src="https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2F2019%2F04%2F10%2F03%2FLogo-255361_25301_034307155_1069094167.jpg" alt="The Fifties">
+        <img src="https://pedsapp.com/_core/_uploads/40/2021/04/1112230421k7g8i2kbbi.jpg" alt="Freguesia Hamburgueria">
+        <img src="https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2F2022%2F12%2F02%2F14%2FLogo-286656_386583_145238960_1607762817.jpg" alt="Top Burger House">
+    </div>
+</div>
+
+</body>
+</html>

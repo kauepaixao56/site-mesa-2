@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ecobite</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #0e392e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            height: 550px;
+            display: flex;
+            background: #0a2e25;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .left {
+            width: 60%;
+            padding: 40px;
+            color: #fff;
+        }
+
+        .right {
+            width: 40%;
+            position: relative;
+            background: url("sua-imagem.jpg") no-repeat center;
+            background-size: cover;
+            filter: brightness(0.8);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 20px;
+        }
+
+        .right h1 {
+            font-size: 42px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 0 10px #000;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #fff; }
+            to   { text-shadow: 0 0 25px #f4e3b2; }
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #c8c8c8;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: none;
+            background: #153e33;
+            color: #fff;
+        }
+
+        
+        .botao-link {
+            display: inline-block;
+            margin-top: 30px;
+            width: 92%;
+            padding: 12px;
+            border-radius: 20px;
+            background: #eae6d6;
+            font-size: 16px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .botao-link:hover {
+            background: #fff1c4;
+            transform: scale(1.03);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="left">
+            <h2>Login</h2>
+
+            <label>Nome</label>
+            <input id="nome" type="text">
+
+            <label>Email</label>
+            <input id="email" type="email">
+
+            <label>CPF</label>
+            <input id="cpf" type="text">
+
+           
+            <a href="pg_catprod.html" class="botao-link">ENVIAR</a>
+        </div>
+
+        <div class="right">
+            <h1>BEM-VINDO!</h1>
+        </div>
+
+    </div>
+
+</body>
+</html>
